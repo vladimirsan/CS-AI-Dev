@@ -1,0 +1,16 @@
+# This is just plain text
+
+## Hello
+
+### Hello There
+
+#### Smaller Heading
+
+I want this be __boLLd__
+
+I want this to be _italics_
+
+- kali
+- khal
+- milo (my wife's )
+    - finish typing this

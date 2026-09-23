@@ -1,0 +1,40 @@
+body {
+    color: brown;
+}
+
+h1 {
+    color:black;
+}
+
+main {
+    color: blue;
+}
+
+/* In the case of 'simple' conflicts, last one wins*/
+/* avoid having conflicts in your CSS if you can */
+/* main {
+    color: green;
+} */
+
+/* general guidelines: */
+/* base default styles in tags h1,p,body */
+/* specific use cases in classes */
+/* very rarely (or never) ids */
+
+/* . means class */
+.primary {
+    background-color: burlywood;
+}
+
+/* # means id */
+#food {
+    background-color: violet;
+}
+
+.secondary {
+    background-color: gray;
+}
+
+.warning {
+    background-color: orangered;
+}

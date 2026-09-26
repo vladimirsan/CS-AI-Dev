@@ -1,0 +1,33 @@
+body {
+    background-color: #D9ECE8; /* Hex Codes */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Not the best idea to use * in a selector EXCEPT when debbuging and when something is off*/
+* {
+    /* border: 1px dashed red; */
+    /* size style color */
+
+    /* border-color: red;
+    border-width: 1px;
+    border-style: solid; */
+
+    /* font-size: 50px; */ /* absolute units -- wil not scale*/
+    font-size: 1.2rem; /* rem is a relative unit for fonts when REM stands foor ROOT ELEMENT. This will scale*/
+}
+
+
+section {
+    color:brown;
+}
+
+/*descendant selector*/
+.example.a.b p {
+    color: black;
+}
+
+
+/*both*/
+.example.menu-special {
+    color: black;
+}

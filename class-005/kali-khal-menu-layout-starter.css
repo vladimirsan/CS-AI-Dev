@@ -37,8 +37,9 @@ body {
 
 .menu-list {
   display: flex; /* This becomes a flex container the moment I use display:flex */
-  gap: 1rem;
   flex-wrap: wrap;
+  row-gap: 1rem;
+  column-gap: 1rem;
 }
 
 .menu-item { /* These become flex items THE MOMENT I put them inside a flex container */

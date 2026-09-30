@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 2rem;
+  background-color: #f6f0e3;
+  color: #24342f;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.page-header {
+  width: 900px;
+  margin: 0 auto 2rem;
+  padding: 1.5rem;
+  border: 3px solid #2d5a4b;
+  background-color: #ffffff;
+}
+
+#menu-title {
+  margin: 0;
+  color: #2d5a4b;
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+.tagline {
+  text-align: center;
+}
+
+.menu {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.menu-section {
+  margin-bottom: 2rem;
+}
+
+.menu-list {
+}
+
+.menu-item {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 2px solid #d6b16a;
+  background-color: #fffaf0;
+}
+
+.featured {
+  border-color: #8a3d14;
+}
+
+.special-badge {
+  padding: 0.25rem 0.5rem;
+  background-color: #8a3d14;
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+
+.feature-image {
+  width: 120px;
+}
+
+.description {
+  font-size: 1rem;
+}
+
+.price {
+  color: #8a3d14;
+  font-size: 1.1rem;
+}

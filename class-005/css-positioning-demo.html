@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Positioning Demo</title>
+  </head>
+  <body>
+    <h1>Static, Relative, Absolute, and Fixed Positioning</h1>
+    <p>Start at the first card. Predict what each label will do before you inspect its CSS.</p>
+
+    <section class="example">
+      <h2>1. Static: normal flow</h2>
+      <div class="cafe-card">
+        <span class="label static-label">Kali's special</span>
+        <p>This label stays where normal document flow puts it. The <code>top</code> and <code>left</code> values do nothing while its position is <code>static</code>.</p>
+      </div>
+    </section>
+
+    <section class="example">
+      <h2>2. Relative: move from the original spot</h2>
+      <div class="cafe-card">
+        <span class="label relative-label">Khal's special</span>
+        <p>The green label moves down and right, but the browser keeps its original space in the document flow.</p>
+      </div>
+    </section>
+
+    <section class="example">
+      <h2>3. Absolute: place inside a positioned parent</h2>
+      <div class="cafe-card absolute-card">
+        <h3>Mango tart</h3>
+        <p>This card is the reference box because it uses <code>position: relative</code>.</p>
+        <span class="label absolute-label">$6</span>
+      </div>
+      <p>The price is removed from normal flow and sits at the bottom-right of its card.</p>
+    </section>
+
+    <section class="example">
+      <h2>4. Fixed: stay in the same place in the window</h2>
+      <p>Scroll this page. The orange note stays near the bottom-right of your browser window rather than moving with this paragraph.</p>
+    </section>
+
+    <aside class="fixed-note">Fixed note: I stay in the window while you scroll.</aside>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+
+body {
+  max-width: 760px;
+  min-height: 130vh;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.example {
+  margin: 1.5rem 0;
+}
+
+.cafe-card {
+  min-height: 7rem;
+  padding: 1rem;
+  border: 2px solid #2d5a4b;
+}
+
+.label {
+  padding: 0.2rem 0.45rem;
+  background-color: #d7edf2;
+  color: #176b87;
+  font-weight: bold;
+}
+

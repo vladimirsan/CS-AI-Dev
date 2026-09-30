@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 760px;
+  min-height: 130vh;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f8f1e6;
+  color: #24342f;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  color: #2d5a4b;
+}
+
+.example {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 2px solid #d6b16a;
+  background-color: #fffaf0;
+}
+
+.cafe-card {
+  min-height: 7rem;
+  padding: 1rem;
+  border: 2px solid #2d5a4b;
+  background-color: #ffffff;
+}
+
+.label {
+  display: inline-block;
+  padding: 0.2rem 0.45rem;
+  border-radius: 0.25rem;
+  background-color: #d7edf2;
+  color: #176b87;
+  font-weight: bold;
+}
+
+/* static is the default. top and left do not move this element. */
+.static-label {
+  position: static;
+  top: 20px;
+  left: 20px;
+}
+
+/* relative keeps the element's original space, then moves it visually. */
+.relative-label {
+  position: relative;
+  top: 0.5rem;
+  left: 1rem;
+  background-color: #e9f5ef;
+  color: #2d5a4b;
+}
+
+/* This parent is the reference box for the absolute child below. */
+.absolute-card {
+  position: relative;
+}
+
+/* absolute removes this label from normal flow and places it in its parent. */
+.absolute-label {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  background-color: #fff0d8;
+  color: #8a3d14;
+}
+
+/* fixed places this note relative to the browser window, even when scrolling. */
+.fixed-note {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  max-width: 12rem;
+  padding: 0.65rem;
+  border: 2px solid #8a3d14;
+  border-radius: 0.4rem;
+  background-color: #fff0d8;
+  color: #6c310e;
+  font-weight: bold;
+}
+
+code {
+  padding: 0.1rem 0.25rem;
+  background-color: #eee6d8;
+}

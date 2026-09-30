@@ -36,13 +36,17 @@ body {
 }
 
 .menu-list {
+  display: flex; /* This becomes a flex container the moment I use display:flex */
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.menu-item {
+.menu-item { /* These become flex items THE MOMENT I put them inside a flex container */
   margin: 1rem 0;
   padding: 1rem;
   border: 2px solid #d6b16a;
   background-color: #fffaf0;
+  width: 7rem;
 }
 
 .featured {

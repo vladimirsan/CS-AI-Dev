@@ -1,0 +1,40 @@
+body {
+    background-color: #F8F1E6;
+}
+
+.mango-tart-note {
+    border-color: green;
+    border-style: solid;
+    border-width: 6px;
+    background-color: lightcyan;
+    padding: 1rem;
+    width: 250px;
+}
+
+
+.outer-box{
+    border-color: darkgoldenrod;
+    border-style: solid;
+    border-width: 3px;
+    margin-top: 1.5rem;
+    /* top, right, bottom, left*/
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    background-color: blanchedalmond;
+    width: 500px;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: green;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+/* * {
+    border-color: red;
+    border-style: solid;
+    border-width: 2px;
+} */

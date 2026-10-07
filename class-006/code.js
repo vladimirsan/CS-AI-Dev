@@ -25,6 +25,8 @@ let message = 'Kali is Cute';
 let thisIsAVeryLongName = 'Kali is Cute';
 const thisIsAVeryLongNameAndNowItsConst = 'Kali is Cute';
 
+
+
 //  modern JS development does not use var
 //  (but var is 'bassicaly' a worse let)
 var iAmAVarVariable = 'Kali is Cute';

@@ -54,5 +54,4 @@ let grades = [-1,10, 1, 9, 8, 7]; //Array
 // console.log(score1);
 // console.log(grades);
 console.log(`The first value in my array is ${grades[0]}`)
-
 kali.behave();

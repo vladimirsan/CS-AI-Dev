@@ -1,0 +1,6 @@
+.slot:hover {
+    background-color:lightcyan;
+}
+.slot {
+    cursor: pointer;
+}

@@ -10,6 +10,7 @@ let myName = "Vinicio";
 // using the function as a value
 let myFunction = sayHi;
 
+// Like For Each n_o, wink wink
 function fancyFunction(operation){ //First-order functions
     // calling the function
     operation();
@@ -53,5 +54,7 @@ let grades = [-1,10, 1, 9, 8, 7]; //Array
 // console.log(kali.name);
 // console.log(score1);
 // console.log(grades);
-console.log(`The first value in my array is ${grades[0]}`)
+console.log(`The first value in my array is ${
+    grades[0]
+}`)
 kali.behave();

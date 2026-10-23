@@ -32,8 +32,9 @@
 let petName = 'kali';
 
 
+// Bottom Up - Doing something if the value is equal to a string, something else otherwise
 if(petName === 'Kali') {
     alert('Oh boy! That\'s a very cute dog');
 } else {
-    alert('Oh... no comments');
+    alert('Oh... no comments'); // Shows an alert on screen 
 }

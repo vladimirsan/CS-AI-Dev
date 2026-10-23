@@ -121,3 +121,13 @@ whoGoesDiv.addEventListener("mousedown", doSomethingWithTheButton);
 // if(player1 === 'rock' && player2 === 'paper') {
 // console.log('paper wins')
 // }
+
+
+
+
+
+
+
+
+// Trying to come up with a solution of something you haven't done
+// Approach to starting javascript 

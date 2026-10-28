@@ -18,14 +18,14 @@
 // }
 
 // // Arrow Function
-// let sayHiToPetArrow = (petName, messageForYes) => {
-//     if(petName === 'Kali') {
-//         alert(messageForYes);
-//     } else {
-//         alert('Oh... no comments');
-//     }
-//     return 5;
-// }
+let sayHiToPetArrow = (petName, messageForYes) => {
+    if(petName === 'Kali') {
+        alert(messageForYes);
+    } else {
+        alert('Oh... no comments');
+    }
+    return 5;
+}
 
 
 

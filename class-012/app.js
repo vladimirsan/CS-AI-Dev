@@ -21,14 +21,29 @@ function changeTurn(currentPlayer){
 
 const whoGoesDiv = document.querySelector("#who-goes-tracker");
 whoGoesDiv.textContent = game.whoGoes;
-function doSomethingWithTheButton(){
-    const slot1 = document.querySelector("#slot1")
-    slot1.textContent = 'X';
+
+function resetState(){
+    // First, I need to get references to all the divs
+    // Change all of them to have _ as text content, _
+    const allSlots = document.querySelectorAll(".slot");
+
+    // const clearSlot = (thisParticularSlot) => {
+    //     alert(thisParticularSlot.textContent);
+
+    // };
+
+    // allSlots.forEach(clearSlot);
+
+    allSlots.forEach((thisParticularSlot) => {
+        thisParticularSlot.textContent = "_";
+    });
+
+
 }
 
-const testButton = document.querySelector("#test-button");
-testButton.addEventListener("click", doSomethingWithTheButton);
-whoGoesDiv.addEventListener("mousedown", doSomethingWithTheButton);
+const testButton = document.querySelector("#reset-button");
+testButton.addEventListener("click", resetState);
+whoGoesDiv.addEventListener("mousedown", resetState);
 
 
 // Whenever I want to do something 'big', I'm going to
@@ -56,27 +71,40 @@ function deleteUnwantedDiv() {
     divIDoNotWant.remove();
 }
 
+function changeValueInBoard(index, valueToChange){
+    game.board[index] = valueToChange;
+}
+
+function checkIfSomeoneWon(){
+    alert("did someone win?")
+}
+
 // playTurn is a handler
-function playTurn(event){
+function handleClickOnSlot(event){
     // find the div I clicked on --> ASsume it's always the first div
     const slotElement1 = document.querySelector("#slot1");
+    // I'm going to name things based on my problem domain
+    const clickedSlot = event.target;
     // change the contents of the div to X or O depending on the player's turn
     // slotElement1.textContent = 'X';
 
     // think about the target as the 'target element'
-    console.log(event.target);
-
+    // console.log(event.target);
     if(game.whoGoes === 'player-1') {
         // whenever player 1 goes, I want to change the div they clicked to X
         // and then it's player's 2 turn
-        event.target.textContent = 'X';
+        clickedSlot.textContent = 'X';
+        changeValueInBoard(clickedSlot.dataset.index, "X");
         game.whoGoes = 'player-2';
     } else {
         // whenever player 2 goes, I want to change the div they clicked to 0
         // and then it's player's 1 turn
-        event.target.textContent = '0';
+        clickedSlot.textContent = '0';
         game.whoGoes = 'player-1';
+        changeValueInBoard(clickedSlot.dataset.index, "0");
     }
+
+    checkIfSomeoneWon();
 
     // (At some point), see if someone lost or won the game
     // Recipe: Changing a DOM element
@@ -98,7 +126,7 @@ function registerCLickHandlers(){
     const allSlots = document.querySelectorAll(".slot");
 
     allSlots.forEach((thisParticularSlot) => {
-        thisParticularSlot.addEventListener('mousedown', playTurn);
+        thisParticularSlot.addEventListener('mousedown', handleClickOnSlot);
     });
 
     // allSlots.forEach(function test(thisParticularSlot){
@@ -108,5 +136,5 @@ function registerCLickHandlers(){
 
 
 addIntructions();
-deleteUnwantedDiv();
+deleteUnwantedDiv(); 
 registerCLickHandlers();

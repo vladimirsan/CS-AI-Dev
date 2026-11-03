@@ -62,13 +62,13 @@
 //     }, 1000); 
 // }
 
-function one(){
-    setTimeout(() => { // whenever one runs, wait 2000 ms and then run this function
-        console.log("one");
+// function one(){
+//     setTimeout(() => { // whenever one runs, wait 2000 ms and then run this function
+//         console.log("one");
 
-        two();
-    }, 2000); // 1000ms ==== 1s
-}
+//         two();
+//     }, 2000); // 1000ms ==== 1s
+// }
 
 // one();
 

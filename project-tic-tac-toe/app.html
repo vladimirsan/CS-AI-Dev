@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CSS Box Model Demo</title>
+        <link rel="stylesheet" href="./app.css">
+    </head>
+    <body id="body">
+
+        <div>Who Goes?:</div>
+        <!-- I'm going to use this div to keep track of who goes-->
+        <div id="who-goes-tracker"></div>
+        <div id="no"> I do not want this message on my site </div>
+        <hr/>
+        <main class="board">
+            <div class="slot" data-index="0" id="slot1"> _ </div>
+            <div class="slot" data-index="1" id="slot2"> _ </div>
+            <div class="slot" data-index="2" id="slot3"> _ </div>
+            <div class="slot" data-index="3" > _ </div>
+            <div class="slot" data-index="4"> _ </div>
+            <div class="slot" data-index="5" > _ </div>
+            <div class="slot" data-index="6"> _ </div>
+            <div class="slot" data-index="7"> _ </div>
+            <div class="slot" data-index="8"> _ </div>
+        </main>
+        <hr/>
+        <button id="reset-button"> Reset </button>
+        <script src="./app.js"> </script>
+
+    </body>
+</html>

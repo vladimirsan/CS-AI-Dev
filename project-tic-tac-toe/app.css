@@ -1,0 +1,18 @@
+.slot:hover {
+    background-color:lightcyan;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 15rem;
+    margin: 0 auto; /* margin: TOP/BOTTOM LEFT/RIGHT */    
+}
+/* We can center this with flexbox too */
+
+.slot {
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+}
+

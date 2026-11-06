@@ -63,7 +63,7 @@ function weHaveALine(firstIndex, secondIndex, thirdIndex){
         return true;
     } 
 
-    return false
+    return false;
 }
 
 function checkIfSomeoneWon(){

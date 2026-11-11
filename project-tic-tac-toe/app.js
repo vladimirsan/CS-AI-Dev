@@ -25,7 +25,7 @@ function resetState(){
     const allSlots = document.querySelectorAll(".slot");
 
     allSlots.forEach((thisParticularSlot) => {
-        thisParticularSlot.textContent = "_";
+        thisParticularSlot.textContent = "";
     });
 
     game.board = [ '','','', '', '','', '', '','' ];

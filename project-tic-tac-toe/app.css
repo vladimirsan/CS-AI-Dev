@@ -2,17 +2,30 @@
     background-color:lightcyan;
 }
 
+html {
+    background-color: #eef8f8;
+}
+
+main {
+    border: 5px #193642 solid;
+    border-radius: 0.75rem;
+    padding: 1rem;
+}
+
 .board {
     display: flex;
     flex-wrap: wrap;
-    width: 15rem;
+    width: 22rem;
     margin: 0 auto; /* margin: TOP/BOTTOM LEFT/RIGHT */    
 }
 /* We can center this with flexbox too */
 
 .slot {
+    border: 2px #193642 solid;
+    border-radius: 0.75rem;
     cursor: pointer;
     width: 5rem;
     height: 5rem;
+    margin: 1rem;
 }
 

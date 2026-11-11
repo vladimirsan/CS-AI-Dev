@@ -7,6 +7,12 @@ test("should say hi to Kali",
     }
 );
 
+test("should say hi to Kali", 
+    () => {
+        expect(speak.sayBye("Kali")).toBe("Bye Kali");
+    }
+);
+
 test("should say hi to Vinicio", 
     () => {
         expect(speak.sayHi("Vinicio")).toBe("Hi Vinicio");

@@ -1,3 +1,8 @@
+// think about a branch as 'version' of the repo itself
+
+
+alert("welcome to class 17");
+
 let game = {
     whoGoes: 'player-1', 
     board: [ '','','', '', '','', '', '','' ],

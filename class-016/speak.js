@@ -6,6 +6,10 @@ function sayBye(name){
     return `Bye ${name}`;
 }
 
+function eat(name){
+    return `I eat ${name}`;
+}
+
 // module.exports = {
 //     sayHi: sayHi,
 //     sayBye: sayBye,

@@ -1,0 +1,12 @@
+- be in an empty folder
+- npm init -y // this creates package.json
+- npm install express //this gives you package-lock.json
+- create a .js file for your server
+- initialize express
+- create your first route (GET request for all books)
+- You'll need a way to store your books in your API, think about how I have my 'database'
+- Think about what properties you want in your 'book' objects
+- Notice how I return responses in my routes
+- Notice the way I use find for the :id route
+- Console.log as much as you can for you to see how your code is running before you try it 
+- Remember you'll have to send requests to your API, you can use Postman for all requests or the browser for get requests (going to a 'website' counts as a get request)
